@@ -1,0 +1,125 @@
+import { CustomerProfile } from '../types/crmTypes';
+
+export const mockCustomerProfiles: CustomerProfile[] = [
+  {
+    id: 'cust_1',
+    customerId: 'CUST-001',
+    legalBusinessName: 'Global Genetics Inc.',
+    tradingName: 'GlobalGen',
+    primaryContactPerson: 'Dr. Eleanor Vance',
+    primaryContactRole: 'Chief Scientist',
+    contactMethods: [
+      { type: 'EMAIL', value: 'eleanor.vance@globalgen.com', isPrimary: true, isActive: true },
+      { type: 'PHONE', value: '+1-202-555-0174', isPrimary: false, isActive: true },
+    ],
+    addresses: [
+      {
+        type: 'PHYSICAL',
+        street: '123 Innovation Drive',
+        city: 'Geneva',
+        state: 'NY',
+        country: 'USA',
+        postalCode: '14456',
+        isPrimary: true,
+        isActive: true,
+      },
+    ],
+    registrationNumbers: [
+        { type: 'TAX_ID', number: '12-3456789', issuingAuthority: 'IRS', issuedDate: '2010-01-15', isActive: true }
+    ],
+    category: 'CORPORATE',
+    tags: ['Biotechnology', 'Genomics', 'Cattle'],
+    accountManager: { id: 'mgr_1', name: 'John Doe', role: 'Account Manager', email: 'john.doe@reprotech.com' },
+    secondaryContacts: [],
+    escalationHierarchy: [],
+    preferredCommunicationMethods: [
+        { method: 'EMAIL', preference: 5 },
+        { method: 'VIDEO_CALL', preference: 4 }
+    ],
+    languagePreferences: ['en-US'],
+    customerLifetimeValue: 150000,
+    riskAssessmentScore: 25,
+    creditRating: 'AAA',
+    paymentHistory: [],
+    regulatoryComplianceStatus: {
+        overallStatus: 'COMPLIANT',
+        lastAssessmentDate: '2025-07-01',
+        nextAssessmentDate: '2026-07-01',
+        complianceItems: []
+    },
+    preferredServiceTypes: ['IVF', 'Genomic Sequencing'],
+    specializations: ['Bovine Genetics'],
+    linkedAnimals: [],
+    breedingProgramAssociations: [],
+    genomicProjectParticipation: [],
+    currentAnimalInventory: 500,
+    historicalAnimalCount: 2000,
+    interactionHistory: [],
+    projectAssociations: [],
+    status: 'ACTIVE',
+    createdAt: '2015-03-20T10:00:00Z',
+    updatedAt: '2025-08-10T15:30:00Z',
+    createdBy: 'system_init',
+    lastModifiedBy: 'john.doe',
+  },
+  {
+    id: 'cust_2',
+    customerId: 'CUST-002',
+    legalBusinessName: 'Sunrise Farms Ltd.',
+    primaryContactPerson: 'Maria Garcia',
+    primaryContactRole: 'Farm Manager',
+    contactMethods: [
+      { type: 'EMAIL', value: 'maria.g@sunrisefarms.net', isPrimary: true, isActive: true },
+      { type: 'MOBILE', value: '+44-7700-900123', isPrimary: false, isActive: true },
+    ],
+    addresses: [
+      {
+        type: 'PHYSICAL',
+        street: 'Green Valley, Route 5',
+        city: 'Hereford',
+        state: 'Herefordshire',
+        country: 'UK',
+        postalCode: 'HR1 1AA',
+        isPrimary: true,
+        isActive: true,
+      },
+    ],
+    registrationNumbers: [
+        { type: 'VAT_NUMBER', number: 'GB123456789', issuingAuthority: 'HMRC', issuedDate: '2012-05-21', isActive: true }
+    ],
+    category: 'INDIVIDUAL',
+    tags: ['Dairy', 'Holstein'],
+    accountManager: { id: 'mgr_2', name: 'Jane Smith', role: 'Account Manager', email: 'jane.smith@reprotech.com' },
+    secondaryContacts: [],
+    escalationHierarchy: [],
+    preferredCommunicationMethods: [
+        { method: 'PHONE', preference: 5 },
+        { method: 'WHATSAPP', preference: 4 }
+    ],
+    languagePreferences: ['en-GB'],
+    customerLifetimeValue: 75000,
+    riskAssessmentScore: 40,
+    creditRating: 'A',
+    paymentHistory: [],
+    regulatoryComplianceStatus: {
+        overallStatus: 'COMPLIANT',
+        lastAssessmentDate: '2025-06-15',
+        nextAssessmentDate: '2026-06-15',
+        complianceItems: []
+    },
+    preferredServiceTypes: ['Artificial Insemination', 'Embryo Transfer'],
+    specializations: ['Dairy Production'],
+    linkedAnimals: [],
+    breedingProgramAssociations: [],
+    genomicProjectParticipation: [],
+    currentAnimalInventory: 250,
+    historicalAnimalCount: 1200,
+    interactionHistory: [],
+    projectAssociations: [],
+    status: 'ACTIVE',
+    createdAt: '2018-09-01T09:00:00Z',
+    updatedAt: '2025-08-12T11:00:00Z',
+    createdBy: 'jane.smith',
+    lastModifiedBy: 'jane.smith',
+  },
+];
